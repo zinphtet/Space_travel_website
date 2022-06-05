@@ -1,0 +1,75 @@
+
+.navbar{
+    // border: 1px solid red;
+    // margin: 3rem 0rem 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        border: 1px solid lightblue;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        // flex: 1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .navlinks{
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: space-around;
+        // flex: 1;
+        height: 9rem;
+        padding-inline: 7% 10%;
+        background-color: var(--nav-back);
+        background-color: hsl(var(--clr-light)/.09);
+    //    background-color: rgba(128, 109, 109, 0.254);
+       backdrop-filter: blur(5rem);
+        .navlink{
+            //  border: 1px solid black;
+            height: 95%;
+           margin: 0rem 1.5rem;
+            // border: 3px solid transparent;
+           
+           a{
+            //    border: 1px solid red;
+               height: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: relative;
+               &:hover::after {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 3px;
+                bottom: 0%;
+                left: 0;
+                background-color: var(--gray);
+                animation: border_anim .5s linear forwards;
+              }
+
+
+         }
+         a.active::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 0%;
+            left: 0;
+           background-color: var(--white);
+         }
+          
+        }
+       
+    }
+    .menu{
+        display: none;
+    }
+}
