@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+$tablet : 56.25rem;
 :root{
    --f-1 : 'Bellefair', serif;
    --f-2 : 'Barlow Condensed', sans-serif;
@@ -45,6 +45,12 @@ html{
   font-size: 62.5%;
   line-height: 1.5;
   font-family: 'Barlow Condensed', sans-serif;
+  @media screen and (max-width : 56.25rem ){
+    font-size: 59.375%;
+  }
+  @media screen and (max-width: 37.5rem){
+    font-size: 50%;
+  }
 }
 h1{
   font-family: var(--f-4);
@@ -54,11 +60,19 @@ h1{
 //main App
 .main_page{
   min-height: 100vh;
-  padding: 4rem 0rem 5rem 7rem;
+  padding: 4rem 0rem 0rem 0rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
+  position: relative;
+  @media screen and (max-width: 56.25rem){
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  @media screen and (max-width: 37.5rem){
+    padding: 2rem 0rem 0rem 0rem;
+  }
+ 
 }
 
  
@@ -113,4 +127,26 @@ h1{
   font-size: 3rem;
   color: var(--white);
   font-family: var(--f-3);
+}
+.home_travel{
+  font-size: 3rem;
+  color: var(--white-2);
+  font-family: var(--f-2);
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+}
+.home_title{
+  font-size: 15rem;
+  font-family: var(--f-1);
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  color: var(--white);
+}
+.para{
+  font-size: 1.8rem;
+  text-align:left;
+  font-family: var(--f-4);
+  letter-spacing: .1rem;
+  line-height: 1.7;
+  color: var(--white-2);
 }

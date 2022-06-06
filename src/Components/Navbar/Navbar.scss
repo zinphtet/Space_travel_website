@@ -5,11 +5,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 5rem;
+    @media screen and (max-width : 37.5rem ){  
+         padding-inline: 2rem;
+        //  padding-left: 2rem;
+    }
     .logo{
         border: 1px solid lightblue;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
+        @media screen and (max-width : 37.5rem ){
+            width: 4rem;
+            height: 4rem;
+        }
         // flex: 1;
         img{
             width: 100%;
@@ -18,14 +27,30 @@
         }
     }
     .navlinks{
-        // border: 1px solid red;
         display: flex;
         align-items: center;
         gap: 2rem;
         justify-content: space-around;
-        // flex: 1;
         height: 9rem;
         padding-inline: 7% 10%;
+  
+        @media screen and (max-width: 56.25rem){
+            padding-inline: 2% 2%;
+        }
+        @media screen and (max-width : 37.5rem ){
+            position: absolute;
+            top: 0;
+            right:-100% ;
+            width: 60%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding:8rem 0rem 0rem 5rem;
+           transition: right .5s ;
+           z-index: 50;
+        }
         background-color: var(--nav-back);
         background-color: hsl(var(--clr-light)/.09);
     //    background-color: rgba(128, 109, 109, 0.254);
@@ -35,7 +60,13 @@
             height: 95%;
            margin: 0rem 1.5rem;
             // border: 3px solid transparent;
-           
+            @media screen and (max-width: 56.25rem){
+                margin: 0rem .5rem;
+            }
+            @media screen and (max-width : 37.5rem ){
+                // border: 1px solid red;
+                height: 10%;
+            }
            a{
             //    border: 1px solid red;
                height: 100%;
@@ -69,7 +100,15 @@
         }
        
     }
+    .navlinks.open{
+        right: 0%;
+    }
     .menu{
         display: none;
+        @media screen and (max-width : 37.5rem ){
+            display: block;
+            cursor: pointer;
+            z-index: 100;
+        }
     }
 }
