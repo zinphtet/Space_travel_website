@@ -6,7 +6,7 @@ import Destination from './pages/Destination/Destination';
 import Crew from './pages/Crew/Crew';
 import Technology from './pages/Technology/Technology';
 import { useState, useEffect } from 'react';
-import { imagesArr } from '../src/Imgs/BackImgs';
+import { imagesArr } from './Data/BackImgs';
 function App() {
 	const [width, setWidth] = useState(window.innerWidth);
 	// let color = '';

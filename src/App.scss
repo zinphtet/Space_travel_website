@@ -22,10 +22,10 @@ $tablet : 56.25rem;
    
    --fs-1: 3rem;
 
-   --nav-back : #5d615c6a;
+ 
    --white : #fafafa;
    --white-2: #cfc7c7;
-   --gray : #d9cece;
+   --gray : #777c76;
   
    --clr-dark: 230 35% 7%;
     --clr-light: 231 77% 90%;
@@ -60,18 +60,18 @@ h1{
 //main App
 .main_page{
   min-height: 100vh;
-  padding: 4rem 0rem 0rem 0rem;
+  padding: 2.5rem 0rem 0rem 0rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
   position: relative;
   @media screen and (max-width: 56.25rem){
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 0rem 0rem;
   }
-  @media screen and (max-width: 37.5rem){
-    padding: 2rem 0rem 0rem 0rem;
-  }
+  // @media screen and (max-width: 37.5rem){
+  //   padding: 2rem 0rem 0rem 0rem;
+  // }
  
 }
 
@@ -136,7 +136,7 @@ h1{
   text-transform: uppercase;
 }
 .home_title{
-  font-size: 15rem;
+  font-size: 13rem;
   font-family: var(--f-1);
   text-transform: uppercase;
   letter-spacing: .4rem;
@@ -149,4 +149,45 @@ h1{
   letter-spacing: .1rem;
   line-height: 1.7;
   color: var(--white-2);
+}
+.para_2{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.page{
+  max-width: 120rem;
+  margin-inline: auto;
+  padding: 1rem 2rem 0rem;
+  @media screen and (max-width: 56.25rem){
+    margin-bottom: 3rem;
+}
+}
+.section_title{
+   font-size: 2.5rem;
+   letter-spacing: .2rem;
+   text-transform: uppercase;
+   font-family: var(--f-2);
+   margin-left: 4rem;
+   span{
+     margin-right: 1.5rem;
+     color: var(--gray);
+   }
+   @media screen and (max-width: 56.25rem){
+      margin-block: 3rem;
+  }
+  @media screen and (max-width: 37.5rem){
+    margin-left: 2rem;
+}
+}
+
+.info_title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: var(--f-2);
+  color: var(--gray);
+}
+.info_num{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: var(--f-1);
 }
