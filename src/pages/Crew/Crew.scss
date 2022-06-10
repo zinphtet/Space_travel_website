@@ -41,11 +41,13 @@
                         text-transform: uppercase;
                         color: hsl(var(--clr-white)/.3);
                         letter-spacing: .2rem;
+                        font-family: var(--f-2);
                     }
                     .name{
                         font-size: 3.5rem;
                         text-transform: uppercase;
                         letter-spacing: .2rem;
+                        font-family: var(--f-1);
                     }
                     .bio{
                         @media screen and (max-width: 56.25rem){
